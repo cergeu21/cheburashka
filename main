@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Моя Продвинутая Визитка</title>
+<title>Визитка компьютерного мастера</title>
 <!-- Подключение шрифтов -->
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
 <style>
@@ -79,11 +79,7 @@ h2 {
   align-items:center;
 }
 
-/* Удалено margin-top из .header для корректного отображения */
-.header h1 {
-  font-size:3em;
-}
-
+/* Фото */
 .header img {
   width:200px; 
   height:auto; 
@@ -123,7 +119,7 @@ h2 {
  box-shadow :0px4px8px rgba(0,0,0,0.2); /* исправлено */
  transition:.3s ease all; 
  cursor:pointer; 
- display:flex; /* добавлено для центрирования содержимого внутри */
+ display:flex; /* для центрирования содержимого внутри */
  flex-direction:column; /* чтобы заголовок был под изображением */
  align-items:center; /* центрирование по горизонтали */
 }
@@ -161,14 +157,14 @@ h2 {
 
 <!-- Шапка -->
 <header class="header">
- <h1>Иван Иванов</h1>
+ <h1>Алексей Смирнов</h1>
  <img src="https://via.placeholder.com/200" alt="Мое фото"/>
 </header>
 
 <!-- О себе -->
 <section id="about" class="about fade-in-section">
 <h2>О себе</h2>
-<p>Я — компьютерный мастер. Могу решить многие проблемы с компьютером за небольшую плату.</p>
+<p>Я — профессиональный компьютерный мастер с опытом более10 лет. Помогу решить любые проблемы с компьютером или ноутбуком быстро и качественно.</p>
 </section>
 
 <!-- Портфолио -->
@@ -181,11 +177,11 @@ h2 {
  </div>
  <div class="portfolio-item">
    <img src="https://via.placeholder.com/300x200?text=Проект+2" alt="">
-   <h3>Установка программ</h3>
+   <h3>Настройка Windows</h3>
  </div>
  <div class="portfolio-item">
    <img src="https://via.placeholder.com/300x200?text=Проект+3" alt="">
-   <h3>Настройка Windows</h3>
+   <h3>Удаление вирусов</h3>
  </div>
 </div>
 </section>
@@ -193,9 +189,9 @@ h2 {
 <!-- Контакты -->
 <section id="contacts" class="contacts fade-in-section">
 <h2>Контакты</h2>
-<a href="mailto:hypermalboro@gmail.com">hypermalboro@gmail.com</a><br/>
-<a href="tel:+79061672483">+79061672483</a><br/>
-<a href="#" target="_blank">Жду ваших заявок</a>
+<a href="mailto:a.smirnov@gmail.com">a.smirnov@gmail.com</a><br/>
+<a href="tel:+79001234567">+7 (900)123-45-67</a><br/>
+<a href="#" target="_blank">Жду ваших заявок!</a>
 </section>
 
 <script>
