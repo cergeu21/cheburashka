@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Моя Продвинутая Визитка</title>
+<!-- Подключение шрифтов -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+<style>
+  /* Общие стили */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    line-height: 1.6;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* Навигация */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(18,18,18,0.9);
+  display: flex;
+  justify-content: center;
+  padding: 15px 20px;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #00bcd4;
+}
+
+/* Секции */
+section {
+  padding: 100px 20px;
+  max-width:1200px;
+  margin:auto;
+}
+
+/* Заголовки */
+h2 {
+  font-size:2.5em;
+  margin-bottom:30px;
+  text-align:center;
+}
+
+/* Шапка с фото и именем */
+.header {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+
+.header h1 {
+  font-size:3em;
+}
+
+.header img {
+  width:200px; 
+  height:auto; 
+  border-radius:50%; 
+   margin-top:-50px; 
+   border:4px solid #fff; 
+   box-shadow:0px4px8px rgba(0,0,0,0.3);
+   transition:.3s ease all; 
+}
+.header img:hover {
+ transform :scale(1.05);
+}
+
+/* О себе */
+.about {
+   text-align:center; 
+   max-width:800px; 
+   margin:auto; 
+}
+.about p {
+   font-size :1.2em; 
+   margin-top :20px; 
+}
+
+/* Портфолио */
+.portfolio {
+ display:flex; 
+ flex-wrap:flex-wrap; 
+ justify-content:center; 
+ gap :20px; 
+}
+.portfolio-item {
+ background:#222; 
+ border-radius :10px; 
+ overflow:hidden; 
+ width :300px; 
+ box-shadow :0px4px8px rgba(0,0,0,0.2); 
+ transition:.3s ease all; 
+ cursor:pointer; 
+}
+.portfolio-item:hover {
+ transform :translateY(-10px);
+ box-shadow :0px8px16px rgba(0,0,0,0.3);
+}
+.portfolio-item img {
+ width :100%; height:auto; display:block;}
+.portfolio-item h3 {
+ padding :15px ; font-size :1.2em ; text-align:center;}
+/* Контакты */
+.contacts {
+ text-align:center; }
+.contacts a{
+ display:inline-block; margin-top :15px ; font-size :1.2em ; color:#00bcd4 ; transition:.3s ease ;
+ }
+.contacts a:hover { color:#fff;}
+
+ /* Анимации появления (Fade In) */
+.fade-in-section { opacity :0 ; transform :translateY(20px); transition:.6s ease-out;}
+.fade-in-section.is-visible { opacity :1 ; transform:none;}
+</style>
+</head>
+<body>
+
+<!-- Навигация -->
+<nav>
+ <ul>
+   <li><a href="#about">О себе</a></li>
+   <li><a href="#portfolio">Портфолио</a></li>
+   <li><a href="#contacts">Контакты</a></li>
+ </ul>
+</nav>
+
+<!-- Шапка -->
+<header class="header" style="margin-top:-60px;">
+ <h1>Иван Иванов</h1>
+ <img src="https://via.placeholder.com/200" alt="Мое фото"/>
+</header>
+
+<!-- О себе -->
+<section id="about" class="about fade-in-section">
+<h2>О себе</h2>
+<p>Я — опытный веб-разработчик с страстью к созданию современных и удобных сайтов. Могу реализовать любые идеи и сделать ваш проект уникальным.</p>
+</section>
+
+<!-- Портфолио -->
+<section id="portfolio" class="portfolio fade-in-section">
+<h2>Портфолио</h2>
+<div class="portfolio-items">
+ <div class="portfolio-item">
+   <img src="https://via.placeholder.com/300x200?text=Проект+1" alt="">
+   <h3>Проект №1</h3>
+ </div>
+ <div class="portfolio-item">
+   <img src="https://via.placeholder.com/300x200?text=Проект+2" alt="">
+   <h3>Проект №2</h3>
+ </div>
+ <div class="portfolio-item">
+   <img src="https://via.placeholder.com/300x200?text=Проект+3" alt="">
+   <h3>Проект №3</h3>
+ </div>
+</div>
+</section>
+
+<!-- Контакты -->
+<section id="contacts" class="contacts fade-in-section">
+<h2>Контакты</h2>
+<a href="mailto:vashemail@example.com">vashemail@example.com</a><br/>
+<a href="tel:+71234567890">+7 (123)456-78-90</a><br/>
+<a href="#" target="_blank">LinkedIn / GitHub / Telegram</a>
+</section>
+
+<script>
+// Анимация появления при прокрутке
+const faders = document.querySelectorAll('.fade-in-section');
+
+const appearOptions = { threshold: .1 };
+
+const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+ entries.forEach(entry => {
+ if (!entry.isIntersecting) return;
+
+ entry.target.classList.add('is-visible');
+ observer.unobserve(entry.target);
+ });
+}, appearOptions);
+
+faders.forEach(fader => {
+ appearOnScroll.observe(fader);
+});
+
+// Плавная прокрутка при клике по навигации
+document.querySelectorAll('nav a').forEach(link => {
+ link.addEventListener('click', function(e) {
+ e.preventDefault();
+ const targetId = this.getAttribute('href').slice(1);
+ document.getElementById(targetId).scrollIntoView({ behavior:'smooth' });
+ });
+});
+</script>
+
+</body>
+</html>
