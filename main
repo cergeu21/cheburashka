@@ -165,7 +165,7 @@ h2 {
 <!-- О себе -->
 <section id="about" class="about fade-in-section">
 <h2>О себе</h2>
-<p>Я — опытный веб-разработчик с страстью к созданию современных и удобных сайтов. Могу реализовать любые идеи и сделать ваш проект уникальным.</p>
+<p>Я — компьютерный мастер. Могу решить многие проблемы с компьютером за небольшую плату.</p>
 </section>
 
 <!-- Портфолио -->
@@ -174,15 +174,15 @@ h2 {
 <div class="portfolio-items">
  <div class="portfolio-item">
    <img src="https://via.placeholder.com/300x200?text=Проект+1" alt="">
-   <h3>Проект №1</h3>
+   <h3>Установка драйверов</h3>
  </div>
  <div class="portfolio-item">
    <img src="https://via.placeholder.com/300x200?text=Проект+2" alt="">
-   <h3>Проект №2</h3>
+   <h3>Установка программ</h3>
  </div>
  <div class="portfolio-item">
    <img src="https://via.placeholder.com/300x200?text=Проект+3" alt="">
-   <h3>Проект №3</h3>
+   <h3>Настройка Windows</h3>
  </div>
 </div>
 </section>
@@ -190,9 +190,9 @@ h2 {
 <!-- Контакты -->
 <section id="contacts" class="contacts fade-in-section">
 <h2>Контакты</h2>
-<a href="mailto:vashemail@example.com">vashemail@example.com</a><br/>
-<a href="tel:+71234567890">+7 (123)456-78-90</a><br/>
-<a href="#" target="_blank">LinkedIn / GitHub / Telegram</a>
+<a href="mailto:hypermalboro@gmail.com">hypermalboro@gmail.com</a><br/>
+<a href="tel:+79061672483">+79061672483</a><br/>
+<a href="#" target="_blank">Жду ваших заявок</a>
 </section>
 
 <script>
