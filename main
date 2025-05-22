@@ -1,164 +1,34 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Визитка компьютерного мастера</title>
-<style>
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #fff;
-    line-height: 1.6;
-  }
-  nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rgba(18,18,18,0.9);
-    display: flex;
-    justify-content: center;
-    padding: 15px 20px;
-    z-index: 1000;
-  }
-  nav ul {
-    list-style: none;
-    display: flex;
-  }
-  nav li {
-    margin: 0 20px;
-  }
-  nav a {
-    color: #fff;
-    font-weight: bold;
-    font-size: 1em;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  nav a:hover {
-    color: #00bcd4;
-  }
-  section {
-    padding: 100px 20px;
-    max-width:1200px;
-    margin:auto;
-  }
-  h2 {
-    font-size:2.5em;
-    margin-bottom:30px;
-    text-align:center;
-  }
-  .header {
-   display:flex; 
-   flex-direction:column; 
-   align-items:center; 
-   padding-top:80px; /* чтобы не было под навигацией */
-}
-.header h1 {
-   font-size:2.5em; 
-   margin-bottom:20px; 
-}
-.header img {
-   width:200px; 
-   height:auto; 
-   border-radius:50%; 
-   border:4px solid #fff; 
-   box-shadow:0px4px8px rgba(0,0,0,0.3);
-}
-.about {
-   text-align:center; 
-   max-width:800px; 
-   margin:auto; 
-}
-.about p {
-   font-size :1.2em; 
-   margin-top :20px; 
-}
-.portfolio {
- display:flex; 
- flex-wrap:wrap; 
- justify-content:center; 
- gap :20px; 
-}
-.portfolio-item {
- background:#222; 
- border-radius :10px; 
- overflow:hidden; 
- width :300px; 
- box-shadow :0px4px8px rgba(0,0,0,0.2); 
- transition:.3s ease all; 
- cursor:pointer; 
- display:flex; 
- flex-direction:column; 
- align-items:center; 
-}
-.portfolio-item:hover {
- transform :translateY(-10px);
- box-shadow :0px8px16px rgba(0,0,0,0.3);
-}
-.portfolio-item img {
- width :100%; height:auto;}
-.portfolio-item h3 {
- padding :15px ; font-size :1.2em ; text-align:center;}
-.contacts {
- text-align:center; }
-.contacts a{
- display:inline-block; margin-top :15px ; font-size :1.2em ; color:#00bcd4 ; text-decoration:none ; transition:.3s ease ;
- }
-.contacts a:hover { color:#fff;}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Компьютерный Мастер</title>
 </head>
 <body>
-
-<nav>
- <ul>
-   <li><a href="#about">О себе</a></li>
-   <li><a href="#portfolio">Портфолио</a></li>
-   <li><a href="#contacts">Контакты</a></li>
- </ul>
-</nav>
-
-<header class="header">
- <h1>Сергей</h1>
- <img src="https://via.placeholder.com/200" alt="Мое фото"/>
-</header>
-
-<section id="about" class="about">
-<h2>О себе</h2>
-<p>Я — профессиональный компьютерный мастер с опытом более10 лет. Помогу решить любые проблемы с компьютером или ноутбуком быстро и качественно.</p>
-</section>
-
-<section id="portfolio" class="portfolio">
-<h2>Портфолио</h2>
-<div class="portfolio-items">
- <div class="portfolio-item">
-   <img src="https://via.placeholder.com/300x200?text=Проект+1" alt="">
-   <h3>Установка драйверов</h3>
- </div>
- <div class="portfolio-item">
-   <img src="https://via.placeholder.com/300x200?text=Проект+2" alt="">
-   <h3>Настройка Windows</h3>
- </div>
- <div class="portfolio-item">
-   <img src="https://via.placeholder.com/300x200?text=Проект+3" alt="">
-   <h3>Удаление вирусов</h3>
- </div>
-</div>
-</section>
-
-<section id="contacts" class="contacts">
-<h2>Контакты</h2>
-<a href="mailto:hypermalboro@gmail.com">hypermalboro@gmail.com</a><br/>
-<a href="tel:+79061672483">+7 (906)167-24-83</a><br/>
-<a href="#" target="_blank">Жду ваших заявок!</a>
-</section>
-
-<!-- Без JavaScript — навигация по якорям работает по умолчанию -->
-
+    <header>
+        <h1>Компьютерный Мастер</h1>
+        <p>Ваш надежный помощник в мире технологий</p>
+    </header>
+    <main>
+        <section class="services">
+            <h2>Услуги</h2>
+            <ul>
+                <li>Устранение проблем</li>
+                <li>Установка программного обеспечения</li>
+                <li>Настройка Windows</li>
+                <li>Консультации по покупке и апгрейду ПК/Ноутбука</li>
+            </ul>
+        </section>
+        <section class="contact">
+            <h2>Контакты</h2>
+            <p>Телефон: <a href="tel:+79061672483">+7 (906) 167-24-83</a></p>
+            <p>Email: <a href="mailto:hypermalboro@gmail.com">hypermalboro@gmail.com</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Компьютерный Мастер. Все права защищены.</p>
+    </footer>
 </body>
 </html>
